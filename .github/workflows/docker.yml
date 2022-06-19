@@ -14,4 +14,4 @@ jobs:
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
        docker pull -a anasty17/mltb:latest
        docker tag anasty17/mltb:latest monauserbot/mltb:latest
-       docker push-a monauserbot/mltb:latest
+       docker push -a monauserbot/mltb:latest
