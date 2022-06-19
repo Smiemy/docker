@@ -12,6 +12,6 @@ jobs:
     - name: Build the Docker image
       run: |
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
-       docker pull -a anasty17/mltb:latest
+       docker pull anasty17/mltb:latest
        docker tag anasty17/mltb:latest monauserbot/mltb:latest
-       docker push -a monauserbot/mltb:latest
+       docker push monauserbot/mltb:latest
