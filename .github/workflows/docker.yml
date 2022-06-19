@@ -12,6 +12,6 @@ jobs:
     - name: Build the Docker image
       run: |
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
-       docker pull anasty17/mltb:heroku
-       docker tag anasty17/mltb:heroku monauserbot/mltb:heroku
-       docker push monauserbot/mltb:heroku
+       docker pull anasty17/mltb:arm64
+       docker tag anasty17/mltb:arm64 monauserbot/mltb:arm64
+       docker push monauserbot/mltb:arm64
