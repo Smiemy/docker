@@ -14,4 +14,4 @@ jobs:
        echo "${{ secrets.DOCKERPASS }}" | docker login -u "${{ secrets.DOCKERUSER }}" --password-stdin
        docker pull anasty17/mltb:heroku
        docker tag anasty17/mltb:heroku monauserbot/mltb:heroku
-       docker push monauserbot/heroku:heroku
+       docker push monauserbot/mltb:heroku
